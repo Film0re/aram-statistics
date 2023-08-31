@@ -23,10 +23,14 @@ To run this project locally, follow these steps:
 1. Clone the repository: `git clone https://github.com/your-username/aram-stats.git`
 2. Navigate to the project directory: `cd aram-stats`
 3. Install dependencies: `npm install`
-4. PostgreSQL Database Setup:
+5. PostgreSQL Database Setup:
    - Create a PostgreSQL database on Supabase.
    - In the `getting-started` folder, you'll find the schema for the database in the `schema.sql` file. Use this to set up the necessary tables and structure in your Supabase database.
    - Additionally, you can find a script in the `getting-started` folder to populate the database with data
-5. Configure database: Update the database connection settings in `config.js` with your Supabase credentials.
-6. Run the development server: `npm run dev`
-7. Access the application at `http://localhost:5173`
+   - You will need to install cassiopeia and supabase to run the script
+   - pip install cassiopeia
+   - pip install supabase
+   - Run the script and you should have the last 30 games of Aram played by Pobelter in your DB!
+6. Configure database: Make a copy of the .env.template called .env and place your URL and Anon key (will also need to do for script)
+7. Run the development server: `npm run dev`
+8. Access the application at `http://localhost:5173`
