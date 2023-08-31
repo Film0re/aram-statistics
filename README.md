@@ -34,3 +34,7 @@ To run this project locally, follow these steps:
 6. Configure database: Make a copy of the .env.template called .env and place your URL and Anon key (will also need to do for script)
 7. Run the development server: `npm run dev`
 8. Access the application at `http://localhost:5173`
+
+## To-DO
+- Add Champion Pictures
+- Revamp insert script to only run one bulk insert
