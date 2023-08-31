@@ -1,0 +1,36 @@
+{
+    "env": {
+      "node": true,
+      "browser": true,
+      "es6": true
+    },
+    "parserOptions": {
+      "ecmaVersion": "latest"
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:vue/vue3-recommended"
+    ],
+    "rules": {
+      "no-unused-vars": "off",
+      "no-console": ["warn", { "allow": ["warn", "error"] }],
+      "prefer-arrow-callback": "warn",
+      "arrow-body-style": ["warn", "as-needed"],
+      "func-style": ["warn", "expression"],
+      "quotes": ["warn", "single"],
+      "arrow-spacing": ["warn", { "before": true, "after": true }],
+      "spaced-comment": ["warn", "always"],
+      "sort-imports": ["warn", {
+          "ignoreCase": false,
+          "ignoreDeclarationSort": true,
+          "ignoreMemberSort": true,
+          "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+          "allowSeparatedGroups": false
+      }],
+      "vue/no-template-target-blank": ["warn", {
+        "allowReferrer": true,
+        "enforceDynamicLinks": "always"
+      }],
+        "vue/valid-attribute-name": "off"
+    }
+  }
